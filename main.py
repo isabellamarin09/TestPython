@@ -270,8 +270,8 @@ class Main(Graphics):
         electric_and_comb: dict = {}
         while year <= actual_year:
             electric_and_comb[year] = {
-                'ELECTRIC': dict_comb.get(str(year), 0),
-                'COMBUSTION': self.dict_electric.get(str(year), 0),
+                'COMBUSTION': dict_comb.get(str(year), 0),
+                'ELECTRIC': self.dict_electric.get(str(year), 0),
             }
             year += 1
 
